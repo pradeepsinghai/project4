@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "PROJECT_NAME"
+version = "0.3.5"
+description = ""
+authors = ["Dawson Booth <github@dawsonbooth.com>"]
+homepage = "https://github.com/dawsonbooth/REPO_NAME"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+
+[tool.poetry.dev-dependencies]
+autoflake = "^1.4"
+black = "^21.12b0"
+dustpan = "^0.3.2"
+flake8 = "^4.0.1"
+invoke = "^1.6.0"
+isort = "^5.10.1"
+mypy = "^0.930"
+pyinstaller = "^4.7"
+rope = "^0.22.0"
+
+[tool.black]
+line-length = 119
+
+[tool.dustpan]
+remove-empty-directories = true
+
+[tool.isort]
+line_length = 119
+profile = "black"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
